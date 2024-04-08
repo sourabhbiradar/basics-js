@@ -1,0 +1,30 @@
+<html>
+    <h1 id="header" >Switch</h1>
+    <input type="text" id="ans">
+    <button onclick="calculate()">change</button>
+    <p id="colour"></p>
+    <body>
+        <script>
+           
+          function calculate(){
+            var c = (document.getElementById("ans").value)
+            var clr = document.getElementById("colour")
+            switch (c){
+                case "red":
+                document.getElementById("header").style.color="red"
+                clr.innerHTML="its red"
+                break
+                case "blue":
+                document.getElementById("header").style.color="blue"
+                clr.innerHTML="its blue"
+                break
+                default:
+                document.getElementById("header").style.color="pink"
+                clr.innerHTML="its default colour pink"
+            }
+           
+          }
+        </script>
+    </body>
+
+</html>

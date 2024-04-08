@@ -1,0 +1,25 @@
+<html>
+    <body>
+    <h1>square of number </h1>
+    <input type="number" id="num">
+    <button onclick="calculator()" id ="button">answer</button>
+    <h2 id="ans">answer :</h2>
+    
+        <script>
+
+            document.getElementById("button").style.color="blue"
+
+            function calculator(){
+                var num=(document.getElementById("num").value)
+                var ans = num* num
+                var answer =document.getElementById("ans")
+                console.log(answer.innerHTML=("answer : "+ans))
+                console.log(answer.style.color="orange")
+                
+            }
+            
+            
+        </script>
+    </body>
+    
+</html>

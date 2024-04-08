@@ -1,0 +1,23 @@
+<html>
+    <body>
+    <h1 id="header">If/Else</h1>
+    <input type="text" id ="input">
+    <button onclick="pressed()">click</button>
+    
+        <script>
+            
+           function pressed(){
+            var text = document.getElementById("input").value
+
+            if (text === "red"){
+                document.getElementById("header").style.color="red"
+            }
+            else if(text === 'blue'){
+                document.getElementById("header").style.color="blue"
+            }else{
+                document.getElementById("header").style.color="black"
+            }
+        }
+    </script>
+    </body>
+    </html>

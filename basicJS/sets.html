@@ -1,0 +1,33 @@
+<html>
+    <h1>Sets</h1>
+    <body>
+        <script>
+        
+        var set1 = new Set([1,'a',3,'d',3,'d',5])
+        console.log(set1)  //{1 , 'a' , 3 , 'd', 5}
+
+        for (var item of set1){
+            console.log(item)
+        }
+
+        var sets = new Set()
+        sets.add("w").add(3).add(5).add("a").add(5)
+        console.log(sets)
+
+        console.log(sets.has("b")) //false
+        console.log(sets.has(5)) 
+
+        console.log(sets.size)
+
+        console.log(sets.delete(5))
+        console.log(sets)
+
+        console.log(sets.values())
+
+
+
+        
+            
+        </script>
+    </body>
+</html>
